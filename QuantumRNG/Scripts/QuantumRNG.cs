@@ -4,8 +4,8 @@
 // This Unity SDK provides easy access to true quantum random numbers
 // from NIST-certified quantum sources through our hosted API service.
 //
-// Get your API key at: https://your-quantum-api.com
-// Documentation: https://docs.your-quantum-api.com
+// Get your API key at: https://nickinper.github.io/quantum-random-api/
+// Documentation: https://github.com/nickinper/quantum-rng-unity-sdk
 
 using System;
 using System.Collections;
@@ -44,8 +44,8 @@ namespace QuantumRNG
     /// </summary>
     public static class QuantumRandom
     {
-        // Production API endpoint - replace with your actual hosted API
-        private const string PRODUCTION_API_URL = "https://api.quantum-random.com/v1/random";
+        // Production API endpoint - your live Render deployment
+        private const string PRODUCTION_API_URL = "https://quantum-random-api.onrender.com/api/v1/random";
         
         private static string _apiKey;
         private static bool _isInitialized = false;
